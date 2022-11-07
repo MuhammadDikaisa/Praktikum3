@@ -1,6 +1,9 @@
-import random
+max = 0
 
-jumlah = int(input("Masukkan Jumlah N : "))
-
-for i in range (jumlah) :
-    print("Data ke-", i+1, " adalah ", (random.uniform(0.1, 0.5)))
+while True :
+    a = int(input("Masukkan Bilangan : "))
+    if max < a :
+        max = a
+    if a == 0 :
+        break
+print("Bilangan Terbesar Adalah : ", max)
